@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-image: url("./imgs/bg-color2.png");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bg-center{
+    position: fixed;
+    width: 100%;
+    /* height: 220px;
+    background-color: rgba(255,255,255, 0.7); */
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* #center-bg-center{
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    height: 40%;
+    width: 40% ;
+    padding-top:20px ;
+    background-color: rgba(255,255,255, 0.7);
+    border: 1px solid white;
+    border-radius: 10%;
+    text-align: center;
+    color: rgb(51, 53, 63);
+}
+
+#cbcc{
+    display: flex;
+    justify-content: space-around;
+    
+} */
+.hautpage{
+    height: 220px;
+    background-color: rgba(255,255,255, 0.7);
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    animation-name: hautannim;
+    animation-duration: 1s;
+}
+.hautpage #logo-schlama{
+    width: 400px;
+    margin-left:50px;
+    margin-top: 40px;
+    animation-name: hautannimlogo;
+    animation-duration: 1s;
+}
+.hautpage nav{
+    display: flex;
+    padding-top: 135px;
+    margin-right:50px;
+    animation-name: hautannimnav;
+    animation-duration: 1s;
+}
+
+@keyframes hautannim{
+    from{
+        height: 115px;
+        background-color: rgb(250, 250, 250);
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+        /* border-radius: 0 0 10px 10px; */
+        box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    }
+    to{
+        height: 220px;
+        background-color: rgba(255,255,255, 0.7);
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 30%;
+    }
+}
+@keyframes hautannimlogo{
+    from{
+        width: 250px;
+        height: auto;
+        margin-left:50px;
+        margin-top: 27px;
+        z-index: 10;
+    }
+    to{
+        width: 400px;
+        margin-left:50px;
+        margin-top: 40px;
+    }
+}
+@keyframes hautannimnav{
+    from{
+        margin-top: 75px;
+    }
+    to{
+        padding-top: 135px;
+    }
+}
+
+.baspage{
+    height: 115px;
+    background-color: rgb(250, 250, 250);
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    /* border-radius: 0 0 10px 10px; */
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    animation-name: basannim;
+    animation-duration: 1s;
+}
+.baspage #logo-schlama{
+    width: 250px;
+    height: auto;
+    margin-left:50px;
+    margin-top: 27px;
+    z-index: 10;
+    animation-name: basannimlogo;
+    animation-duration: 1s;
+}
+
+.baspage nav{
+    display: flex;
+    margin-top: 75px;
+    margin-right:50px;
+    animation-name: basannimnav;
+    animation-duration: 1s;
+}
+
+@keyframes basannim{
+    from{
+        height: 220px;
+        background-color: rgba(255,255,255, 0.7);
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 30%;
+    }
+    to{
+        height: 115px;
+        background-color: rgb(250, 250, 250);
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+        /* border-radius: 0 0 10px 10px; */
+        box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    }
+}
+
+@keyframes basannimlogo{
+    from{
+        width: 400px;
+        margin-left:50px;
+        margin-top: 40px;
+    }
+    to{
+        width: 250px;
+        height: auto;
+        margin-left:50px;
+        margin-top: 27px;
+        z-index: 10;
+    }
+}
+
+@keyframes basannimnav{
+    from{
+        display: flex;
+        padding-top: 135px;
+        margin-right:50px;
+    }
+    to{
+        display: flex;
+        margin-top: 75px;
+        margin-right:50px;
+    }
+}
+
+nav div{
+    padding: 10px 15px 0 15px;
+    /* height: 40px; */
+    font-size: 15px;
+    font-weight: 550;
+    color: rgb(78, 78, 78);
+    text-align: center;
+}
+
+nav div:hover{
+    cursor: pointer !important;
+    color: rgb(191, 202, 30) !important;
+    background-color: rgba(255, 255, 255,0.5) !important;
+    /* overflow: hidden; */
+}
+
+#bg-rdv{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    height: 22px;
+}
+
+#bg-rdv-tel{
+    font-size: 15px;
+    color: rgb(24, 75, 75);
+}
+
+#bg-rdv-rdv{
+    color: rgb(24, 75, 75);
+}
+
+#bg-rdv-rdv:hover{
+    cursor: pointer;
+    color: firebrick;
+}
+
+section{
+    height: 60%;
+    font-size: 18px;
+    padding: 50px 100px;
+    color: rgb(29, 29, 29);
+}
+
+
+#cabinet{
+    background-image: url("./imgs/marseille3.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    /* background-position-y: -200px; */
+    padding: 0;
+    height: 65%;
+}
+
+#fondmars{
+    background-color: rgba(255, 255, 255,0.3);
+    height: 100%;
+    padding: 50px 100px;
+}
+
+#contact{
+    /* background-color: rgb(146, 171, 204); */
+    background-image: url('./imgs/bg-color2.png');
+    height: 60%;
+}
+
+form{
+    width: 350px;
+}
+
+form input{
+    height: 30px;
+    width: 300px;
+    padding-left:10px ;
+    font-size: 15px;
+    font-weight: 500;
+    color: #303030;
+}
+
+form textarea{
+    height: 120px;
+    width: 300px;
+    padding-left:10px ;
+    padding-top: 8px;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #303030;
+}
+
+::-webkit-input-placeholder {
+    color: #686868;
+  }
+  ::-moz-placeholder {
+    color: #686868;
+  }
+  :-ms-input-placeholder {
+    color: #686868;
+  }
+  ::placeholder {
+    color: #686868;
+  }
+
+#cccontact{
+    display: flex;
+    justify-content: space-around;
+}
+
+#ctextcontact{
+    width: 350px;
+    text-align: center;
+}
+
+footer{
+    height: 80px;
+    background-color: rgb(36, 36, 90);
+    color: lightgray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+}

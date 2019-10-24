@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dr Schlama - psychiatre marseille</title>
+    <link rel="icon" href="./imgs/favicon.ico" />
+    <link rel="stylesheet" href="./particlejs/particlejs.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <header>
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+        <script src="./particlejs/particle.min.js"></script>
+
+        <!-- <div id="center-bg-center">
+            <h1>Dr Francois-Elie Sclama</h1><br>
+            <h2>PSYCHIATRE SUR MARSEILLE</h2><br>
+            <h2>34 Rue Virgile Marron, 13005 Marseille</h2><br>
+            <div id="cbcc">
+                <div>
+                    <h3>contacter le secretariat</h3>
+                    <div>06 22 24 50 89</div>
+                </div>
+                <div>
+                    <h3>prendre rendez-vous en ligne</h3>
+                    <button>Doctolib</button>
+                </div>
+            </div>
+        </div> -->
+
+        <div id="bg-center" class="hautpage">
+            <div><img id="logo-schlama" src="./imgs/logo-schlama.png" alt="logo schlama"></div>
+            <nav>
+                <div id="naccueil" onclick="linkpage('accueil')">DOCTEUR</div>
+                <div id="ncabinet" onclick="linkpage('cabinet')">CABINET</div>
+                <div id="nprestations" onclick="linkpage('prestations')">PRESTATIONS</div>
+                <div id="ncontact" onclick="linkpage('contact')">CONTACT</div>
+            </nav>
+        </div>
+        <div id="bg-rdv">
+            <div id="bg-rdv-tel">un rendez-vous? ☎ 06 22 24 50 89 ou <a
+                    href="https://www.doctolib.fr/psychiatre/marseille/francois-elie-schlama" id="bg-rdv-rdv">RDV en
+                    ligne</a></div>
+        </div>
+    </header>
+    <section id="accueil">
+        <h2>Dr Francois-Elie Schlama</h2><br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam consequuntur velit autem sunt nisi vero
+            excepturi possimus. Facere unde recusandae enim animi architecto harum ab iure commodi iusto corrupti porro
+            possimus quisquam a, consectetur debitis suscipit? Repudiandae provident deserunt esse sunt alias, ratione
+            beatae iste ipsum perferendis tempora nam natus harum suscipit. Eos, commodi deserunt, est in nesciunt
+            dolorem laboriosam harum distinctio laborum neque veritatis. Quo, saepe porro aspernatur suscipit, eaque
+            quia qui rerum aut repellendus natus quae dignissimos officiis cupiditate soluta recusandae nisi. Eius at
+            est asperiores quisquam commodi, dolorum numquam repellendus aspernatur minus laudantium quaerat fugiat
+            voluptatibus quibusdam?</p>
+    </section>
+    <section id="cabinet">
+        <div id="fondmars">
+            <h2>Cabinet marseille 5eme</h2>
+        </div>
+    </section>
+    <section id="prestations">
+        <h2>Prestations</h2><br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam consequuntur velit autem sunt nisi vero
+            excepturi possimus. Facere unde recusandae enim animi architecto harum ab iure commodi iusto corrupti porro
+            possimus quisquam a, consectetur debitis suscipit? Repudiandae provident deserunt esse sunt alias, ratione
+            beatae iste ipsum perferendis tempora nam natus harum suscipit. Eos, commodi deserunt, est in nesciunt
+            dolorem laboriosam harum distinctio laborum neque veritatis. Quo, saepe porro aspernatur suscipit, eaque
+            quia qui rerum aut repellendus natus quae dignissimos officiis cupiditate soluta recusandae nisi. Eius at
+            est asperiores quisquam commodi, dolorum numquam repellendus aspernatur minus laudantium quaerat fugiat
+            voluptatibus quibusdam?</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2><br>
+        <div id="cccontact">
+            <form>
+                <input type="text" id="nom" placeholder="entrez votre nom"><br><br>
+                <input type="email" id="mail" placeholder="entrez votre mail"><br><br>
+                <input type="text" id="sujet" placeholder="sujet du message"><br><br>
+                <textarea placeholder="ecrivez votre message" name="msg" id="msg"></textarea><br><br>
+                <input type="submit" value="envoyer">
+            </form>
+            <div id="ctextcontact">
+                <h3>contactez nous</h3><br><br>
+                <div>tel: 04 91 00 00 00</div><br>
+                <div>ou</div><br>
+                <div><a href="#">RDV sur Doctolib</a></div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy; tout droit reservé 2019</p>
+        <p>dr-schlama.fr</p>
+    </footer>
+
+    <script src="./particlejs/particlejs.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
